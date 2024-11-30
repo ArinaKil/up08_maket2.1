@@ -1,0 +1,971 @@
+@font-face {
+    font-family: "RobotoCondensed";
+    src: url("../fonts/Roboto_Condensed/RobotoCondensed-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "RobotoCondensedItalic";
+    src: url("../fonts/Roboto_Condensed/RobotoCondensed-Italic-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "Balqis";
+    src: url("../fonts/Balqis.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: RobotoCondensed;
+}
+
+h2 {
+    font-family: Balqis;
+    color: #E2AB3F;
+    font-weight: 100;
+    font-size: 96px;
+}
+
+h3 {
+    font-size: 24px;
+    font-family: RobotoCondensedItalic;
+    font-weight: 300;
+    text-align: right;
+}
+
+/* header */
+
+.container, .cap {
+    width: 1920px;
+    margin:  auto;
+}
+
+header {
+    background: url("../img/Rectangle\ 43.png");
+    width: 1920px;
+    height: 1080px;
+    justify-content: space-between;
+    background-size: cover;
+}
+
+header .cap {
+    display: flex;
+    height: inherit;
+    width: 1200px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    width: 364px;
+    margin-top: 71px;
+    gap: 53px;
+}
+header a {
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+}
+.Line {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+}
+
+.telephone {
+    display: flex;
+    margin: 71px 3px 0 auto;
+}
+.telephone p {
+    font-size: 24px;
+    margin: 0 0 0 10px;
+    line-height: 28.13px;
+}
+
+.phone {
+    background: url("../img/phone\ 1.png");
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+}
+
+header h1 {
+    font-family: Balqis;
+    font-size: 250px;
+    font-weight: 100;
+    margin: 155px auto 0;
+    width: 1074px;
+}
+
+header h3 {
+    font-size: 56px;
+    font-weight: 300;
+    font-family: RobotoCondensedItalic;
+    margin: -67px 478px 0 0;
+    letter-spacing: 0.3px;
+    line-height: 65.63px;
+    
+}
+
+/* hamburger */
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+.active .line:nth-child(1) { 
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.active .line:nth-child(2) { 
+    opacity: 0;
+}
+.active .line:nth-child(3) { 
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+/* slider */
+
+.slider-container {
+    position: relative;
+    width: 960px;
+    height: 700px;
+    overflow: hidden;
+}
+.slider-container2 {
+    position: relative;
+    width: 960px;
+    height: 1095px;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.prev-button, .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: transparent;
+    border: none;
+}
+.prev-button {
+    left: 16.51px;
+    background: url("../img/back.png");
+    width: 36.98px;
+    height: 70px;
+}
+.next-button {
+    right: 16.51px;
+    background: url("../img/next.png");
+    width: 36.98px;
+    height: 70px;
+}
+figure {
+    width: 100%;
+    height: 700px;
+    margin: 0;
+    overflow: hidden;
+    min-width: 960px;
+}
+.slider-container2 figure {
+    width: 100%;
+    height: 1095px;
+    margin: 0;
+    overflow: hidden;
+    min-width: 960px;
+}
+figure img {
+    width: 100%;
+}
+
+/* wonderland */
+
+.wonderland {
+    width: 1560px;
+    height: 932px;
+    margin: 202px auto 100px 0 ;
+}
+
+.wonderland .title1 {
+    width: 414px;
+    height: 132px;
+    margin-left: 360px;
+}
+
+.title1 h3 {
+    margin: -24px 1px 0 0;
+    letter-spacing: 0.1px;
+}
+
+.block1 {
+    margin: 98px 0;
+    display: flex;
+}
+
+.img1 {
+    background: url("../img/1.png");
+    width: 960px;
+    height: 700px;
+    background-size: cover;
+}
+
+.text1 {
+    width: 600px;
+    height: 611px;
+    margin: auto 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.text1 div {
+    margin: auto 0 50px 55px;
+    line-height: 21px;
+}
+
+.text1 h4 {
+    font-weight: 400;
+    margin-bottom: 51px;
+}
+
+#b {
+    margin-top: 55px;
+}
+
+/* OurTrip */
+
+.OurTrip {
+    width: 1560px;
+    height: 1095px;
+    margin: 200px 0 200px 360px;
+}
+.OurTrip .container {
+    display: flex;
+}
+
+.title2 h3 {
+    margin: -25px 272px 0 242px;
+    letter-spacing: 0.1px;
+}
+
+.img2 {
+    background: url("../img/2.png");
+    width: 960px;
+    height: 1095px;
+    background-size: cover;
+    margin-top: -1px;
+}
+
+.text2 h4 {
+    font-weight: 400;
+    margin-bottom: 19.7px;
+}
+.text2 {
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 101px;
+}
+
+.text2 p {
+    line-height: 28px;
+}
+
+.day {
+    margin: 50px 0 ;
+}
+.day3 {
+    margin: 50px 1px;
+}
+
+
+#reservation {
+    background: white;
+    width: 280px;
+    height: 50px;
+    border: #E2AB3F solid 1px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 300px 0 0;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+/* hotel */
+
+.hotel {
+    width: 1200px;
+    height: 700px;
+    margin-left: 360px;
+}
+.title3 {
+    width: 295.75px;
+    height: 133px;
+}
+.title3 h3 {
+    margin: -25px 7px 0 0;
+}
+
+.img3 {
+    background: url("../img/3.png");
+    width: 500px;
+    height: 700px;
+    background-size: cover;
+    
+}
+.block3 {
+    display: flex;
+    margin-top: 99px;
+}
+.infa {
+    width: 602px;
+    margin-left: 100px;
+}
+
+.text3 p {
+    margin: 1px 0 26px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+}
+.text3 #t3 {
+    margin: -9px 0 0 -1px;
+}
+
+.pages {
+    display: grid;
+    grid-template-columns: 280px 280px;
+    grid-template-rows: repeat(2, 150px);
+    row-gap: 50px;
+    column-gap: 41px;
+    margin: 74px -2px;
+}
+
+.grid {
+    width: 280px;
+    height: 150px;
+    background-size: cover;
+}
+.grid1 {
+    background: url("../img/3.1.png");
+}
+.grid2 {
+    background: url("../img/3.2.png");
+}
+.grid3 {
+    background: url("../img/3.3.png");
+}
+.grid4 {
+    background: url("../img/3.4.png");
+}
+
+/* price */
+
+.price {
+    width: 1305px;
+    margin: 434px 0 0 360px;
+}
+
+.title4 {
+    width: 296px;
+    height: 133px;
+}
+.price h3 {
+    margin: -25px 15px 0 0;
+    letter-spacing: 0.1px;
+}
+
+.onoff {
+    display: flex;
+    margin-top: -3px;
+}
+.text4 {
+    display: flex;
+}
+.text4 h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 100px 0 50px 0;
+    text-align: left;
+    font-family: RobotoCondensed;
+}
+.text4 p {
+    font-size: 18px;
+    margin-top: 20.3px;
+    font-weight: 300;
+    line-height: 21.09px;
+}
+#p41 {
+    margin-top: 20px;
+}
+#p42 {
+    line-height: 21px;
+}
+
+.on {
+    width: 530px;
+    margin-right: 70px;
+}
+.ball {
+    background: url("../img/ball.png");
+    width: 321px;
+    height: 442px;
+    background-size: cover;
+    margin: -15px 25px;
+}
+
+
+.bid {
+    display: flex;
+    width: 1096px;
+    margin: 277px 0 0 106px;
+}
+
+.date {
+    width: 351px;
+}
+.date h3 {
+    margin: -24px 0 0;
+}
+#sto {
+    font-family: RobotoCondensed;
+    margin-top: -20px;
+}
+#pr {
+    margin: -8px 0 0 122px;
+}
+form {
+    width: 384px;
+    margin-top: 100px;
+}
+label {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.inp {
+    background: white;
+    width: 384px;
+    height: 50px;
+    border: #E2AB3F solid 1px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 50px 0 0 -2px;
+    padding-left: 30px;
+}
+.inp2 {
+    margin-top: 20px;
+}
+#sub {
+    background: white;
+    width: 280x;
+    height: 50px;
+    border: #E2AB3F solid 1px;
+    padding: 10px 45px;
+    font-size: 24px;
+    font-weight: 300;
+    margin: 20px 50px;
+}
+.img4 {
+    background: url("../img/4.png");
+    width: 600px;
+    height: 800px;
+    background-size: cover;
+    margin: -76px 0 0 110px;
+}
+
+footer {
+    display: flex;
+    background: url("../img/Rectangle\ 42.png");
+    width: 1920px;
+    height: 1180px;
+    background-size: cover;
+    margin-top: 200px;
+    padding: 95px 0 0 476px;
+}
+.contacts {
+    background: url("../img/whiteBall.png");
+    width: 356px;
+    height: 528px;
+    background-size: cover;
+    padding: 73px 0 0 42px;
+}
+
+.contacts h2 {
+    font-size: 86px;
+}
+
+.tele {
+    display: flex;
+}
+.phone2 {
+    background: url("../img/phone\ 2.png");
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    margin: 21px 0 0 48px;
+}
+.tele p {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 26px 12px 0;
+}
+
+.email {
+    display: flex;
+}
+.mail {
+    background: url("../img/mail\ 1.png");
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    margin: 11px 0 0 12px;
+}
+.email p {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 16px 10px 0;
+}
+
+.con {
+    display: flex;
+    column-gap: 14px;
+    margin: 33px 77px;
+}
+.yt {
+    background: url("../img/youtube\ 1.png");
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+}
+.fb {
+    background: url("../img/facebook.png");
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+}
+.inst {
+    background: url("../img/instagram\ 1.png");
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+}
+#end {
+    font-family: Balqis;
+    font-weight: 100;
+    font-size: 86px;
+    margin: 217px 133px;
+    color: black;
+}
+
+
+
+@media screen and (max-width: 375px) {
+    body {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 56px;
+    }
+    
+    h3 {
+        font-size: 12px;
+    }
+
+    header {
+        width: 100%;
+        height: 250px;
+    }
+    header h1 {
+        font-size: 70px;
+        margin: 50px 50px 0;
+    }
+    header h3 {
+        font-size: 18px;
+        margin: -35px 200px ;
+        text-align: left;
+    }
+
+    .telephone {
+        margin: 5px 0 0 -250px;
+    }
+    .telephone p {
+        font-size: 15px;
+        line-height: 28.13px;
+        margin: -5px 3px;
+    }
+    
+    .phone {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* hamburger */
+    .hamburger {
+        cursor: pointer;
+        display: block;
+        margin: auto 80px;
+    }
+    header .menu {
+        display: none;
+    }
+    header {
+        width: 100%;
+    }
+    header nav .show-menu {
+        left: 0;
+        right: 0;
+        top: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        padding: 20px;
+        background: #d7f8fe;
+    }
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+    header a {
+        font-size: 12px;
+    }
+    header ul {
+        margin-top: 0px;
+        gap: 0px;
+    }
+
+
+
+    .slider-container {
+        position: relative;
+        width: 375px;
+        height: 250px;
+        background-size: cover;
+        overflow: hidden;
+    }
+    .slider-container2 {
+        position: relative;
+        width: 960px;
+        height: 1095px;
+        overflow: hidden;
+    }
+    
+    .slider img {
+        width: 725px;
+        height: 100%;
+        object-fit: cover;
+    }
+    .prev-button, .next-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: transparent;
+        color: transparent;
+        border: none;
+    }
+    .prev-button {
+        left: 16.51px;
+        background: url("../img/back.png");
+        width: 36.98px;
+        height: 70px;
+    }
+    .next-button {
+        right: 16.51px;
+        background: url("../img/next.png");
+        width: 36.98px;
+        height: 70px;
+    }
+    figure {
+        width: 100%;
+        height: 700px;
+        margin: 0;
+        overflow: hidden;
+        min-width: 960px;
+    }
+    .slider-container2 figure {
+        width: 100%;
+        height: 1095px;
+        margin: 0;
+        overflow: hidden;
+        min-width: 960px;
+    }
+    figure img {
+        width: 100%;
+    }
+
+    /* wonderland */
+
+    .wonderland {
+        width: 100%;
+        margin: 50px 0 0;
+    }
+
+    .wonderland .title1 {
+        width: 230px;
+        height: 0;
+        margin: 10px 120px 0;
+    }
+
+    .title1 h3 {
+        margin: -15px 1px 0 0;
+        letter-spacing: 0.1px;
+    }
+
+    .block1 {
+        margin-top: 90px;
+        display: block;
+    }
+
+    .text1 {
+        width: 375px;
+        margin: auto 0;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .text1 div {
+        margin: 15px;
+    }
+
+    .text1 h4 {
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    #b {
+        margin-top: 10px;
+    }
+
+
+    /* OurTrip */
+
+    .OurTrip {
+        width: 100%;
+        margin: -70px 10px 0;
+    }
+    .OurTrip .container {
+        display: block;
+    }
+
+    .title2 h3 {
+        text-align: left;
+        margin: -15px 145px;
+        letter-spacing: 0.1px;
+    }
+
+    .img2 {
+        width: 355px;
+        height: 280px;
+    }
+
+    .text2 {
+        font-size: 14px;
+        margin-top: 0;
+    }
+
+    .text2 p {
+        line-height: 18px;
+    }
+
+    .day {
+        margin: 30px 0;
+    }
+    .day3 {
+        margin: 20px 1px;
+    }
+    #reservation {
+        width: 200px;
+        height: 40px;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    /* hotel */
+    .hotel {
+        width: 375px;
+        margin-left: 10px;
+        margin-top: -70px;
+    }
+    .title3 {
+        width: 150px;
+        height: 0;
+    }
+    .title3 h3 {
+        margin: -15px 7px 0 0;
+    }
+
+    .img3 {
+        background: url("../img/3.png");
+        width: 355px;
+        height: 200px;
+        background-size: cover;
+        
+    }
+    .block3 {
+        display: block;
+    }
+    .infa {
+        width: 355px;
+        margin-left: 0;
+    }
+
+    .text3 p {
+        margin: 1px 0 16px;
+        font-size: 14px;
+    }
+    .text3 #t3 {
+        margin: 0;
+    }
+
+    .pages {
+        display: grid;
+        grid-template-columns: 150px 280px;
+        grid-template-rows: repeat(2, 150px);
+        row-gap: 0;
+        column-gap: 10px;
+        margin: 10px -2px;
+    }
+
+    .grid {
+        width: 150px;
+        height: 100px;
+    }
+
+    /* price */
+
+    .price {
+        width: 355px;
+        margin: 270px 10px;
+    }
+
+    .title4 {
+        width: 150px;
+        height: 133px;
+    }
+    .price h3 {
+        margin: -15px 15px 0 0;
+    }
+
+    .text4 {
+        display: block;
+    }
+    .text4 h3 {
+        font-size: 18px;
+        margin: 0px 0 10px 0;
+    }
+    .text4 p {
+        font-size: 14px;
+        margin-top: 0;
+    }
+    .on {
+        width: 355px;
+        margin: -30px 70px 30px 0;
+
+    }
+    .ball {
+        display: none;
+    }
+
+
+    .bid {
+        display: block;
+        width: 355px;
+        margin: 30px 0 0;
+    }
+
+    .date {
+        width: 200px;
+    }
+    .date h3 {
+        margin: -14px 0 0;
+    }
+    #sto {
+        margin-top: -12px;
+        margin-right: 15px;
+    }
+    #pr {
+        margin: -8px 0 0 75px;
+    }
+    form {
+        width: 355px;
+        margin-top: 20px;
+    }
+    label {
+        font-size: 18px;
+    }
+
+    .inp {
+        width: 355px;
+        height: 40px;
+        font-size: 14px;
+    }
+    .inp2 {
+        margin-top: 10px;
+    }
+    #sub {
+        height: 50px;
+        font-size: 18px;
+    }
+    .img4 {
+        width: 355px;
+        height: 200px;
+        margin: 0;
+    }
+
+    footer {
+        display: flex;
+        width: 375px;
+        height: 270px;
+        margin-top: -230px;
+        padding: 10px 0 0 20px;
+    }
+    .contacts {
+        width: 175px;
+        height: 260px;
+        padding: 30px 45px;
+    }
+
+    .contacts h2 {
+        font-size: 28px;
+    }
+
+    .phone2 {
+        display: none;
+    }
+    .tele p {
+        font-size: 14px;
+        margin: 7px -12px 0;
+    }
+    .mail {
+        display: none;
+    }
+    .email p {
+        font-size: 12px;
+        font-weight: 300;
+        margin: 16px -22px 0;
+    }
+
+    .con {
+        display: none;
+    }
+    #end {
+        font-size: 24px;
+        margin: 60px 5px;
+        color: black;
+    }
+}
